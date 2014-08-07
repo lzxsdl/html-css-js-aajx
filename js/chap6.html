@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn" xml:lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>xhtml的测试</title>
+	</head>
+
+	<body>
+		<form action="formphp.php" method="post" name="testform">
+			<p>
+				first name: <input type="text" name="firstname" value="" maxlength="5" /> <br />
+				last name: <input type="text" name="lastname" value="" /> <br />
+				sex:  <input type="radio" name="sex" value="male"  />male
+					  <input type="radio" name="sex" value="female"  checked="checked" />female  <br />
+				language:
+					<input type="checkbox" name="lang[]" value="China" />China
+					<input type="checkbox" name="lang[]" value="USA" />USA
+					<input type="checkbox" name="lang[]" value="Japan" checked="checked" />Japan   <br />
+				
+				<textarea name="longtext" cols="20" rows="4">
+					
+				</textarea>  <br />
+				
+				<p>
+					<select name="place">
+						<option value="beijing">北京</option>
+						<option value="shanghai">上海</option>
+						<option value="shenzhen">深圳</option>
+					</select>
+				</p>
+				
+				<p>
+					<fieldset>
+						<legend>哈哈哈哈</legend>
+						<input type="checkbox" name="lang[]" value="China"  id="china"/><label for="china">China</label>
+						<input type="checkbox" name="lang[]" value="USA" id="usa" /><label for="usa">USA</label>
+						<input type="checkbox" name="lang[]" value="Japan" id="japan" checked="checked" /><label for="japan">Japan</label>
+					</fieldset>
+				</p>
+				<input type="button" value="这是个按钮" name="testbtn" />
+				<input type="submit" value="哈哈哈" id="submit1" name="submit1"/>
+			</p>
+		</form>
+		<script src="jquery-1.11.1.js"></script>
+		<script src="chap6.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+.juedui{
+  position:absolute;
+  border:1px solid #333333;
+  top:400px;
+  left:400px;
+}
+
+#head{
+  border:2px solid #00ff00;
+  margin:5px;
+}
+
+
+#layout{
+	width:1308px;
+	margin: 10px auto;
+    /* border:2px solid #ff0000; */
+}
+
+#left{
+    max-height: 550px;
+    background-color:#cccccc;
+	border:2px solid #333333;
+	width:300px;
+	float:left;
+	overflow:scroll;
+}
+
+#right{
+    max-height: 550px;
+    background-color:#cccccc;
+	border:2px solid #333333;
+	width:1000px;
+	float:left;
+	overflow:scroll;
+}
+
+#foot{
+  border:2px solid #0000ff;
+  margin:5px;
+}
+
+body{
+  	background-image:url(img/back.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.clear{
+  clear:both;
+}

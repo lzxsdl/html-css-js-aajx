@@ -1,0 +1,28 @@
+body{
+	font-family: Shruti;
+	font-size:  10px;
+}
+
+
+p{
+	color: #ff0000;
+}
+
+.c1{
+	color:green;
+}
+
+.c2{
+	color:blue;
+}
+
+h1{
+	font-size:  150%;
+	border: 2px dashed white;
+	border-bottom: 1px dotted #888888;
+	background-color: #ee2233;
+}
+
+a{
+	font-size:25px;
+}

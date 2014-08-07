@@ -1,0 +1,602 @@
+/* 表格样式控制 */
+
+
+/* 链接样式控制 */
+/* a#yangshi
+{
+	display:block;
+	height:30px;
+	width:90px;
+	text-decoration:none;
+	background:#ee6666;
+	color:#dddddd;
+	text-align:center;
+	font-size:25px;
+	border:1px solid #3333ff;
+	border-left-color:#ffffff;
+	border-top-color:#ffffff;
+	border-right-color:#444444;
+	border-bottom-color:#444444;
+}
+
+a#yangshi:hover
+{
+	background:#eeeeee;
+	color:#333333;
+}
+
+a#yangshi:active
+{
+	border:1px solid #3333ff;
+	border-left-color:#444444;
+	border-top-color:#444444;
+	border-right-color:#ffffff;
+	border-bottom-color:#ffffff;
+} */
+
+
+
+/* 图片各种学习测试  */
+/* .f
+{
+  border:1px solid #cecece;
+  height:30px;
+  width:30px;
+  overflow:hidden;
+}
+
+#pic
+{
+	margin-left:-15px;
+	margin-top:-15px;
+} */
+
+
+
+/* 圆角测试 */
+/* .yuanjiao
+{
+  margin:20px;
+  width:300px;
+  height:500px;
+  padding:45px;
+  background-color:#f08787;
+}
+
+.content
+{
+  overflow:auto;
+  width:340px;
+  height:540px;
+  position:relative;
+  top:-60px;
+  left:-20px;
+}
+
+
+.rounddiv
+{
+  width:300px;
+  height:500px;
+  background-color:#ececec;
+}
+
+.jiaolt,.jiaort,.jiaolb,.jiaorb
+{
+  width:45px;
+  height:45px;
+  background:url(img/yuan.png) no-repeat;
+  position:relative;
+}
+
+.jiaolt
+{
+  background-position:0px 0px;
+  left:-45px;
+  top:-45px;
+  float:left;
+}
+
+.jiaort
+{
+  background-position:-45px 0px;
+  top:-45px;
+  right:-45px;
+  float:right;
+}
+
+.jiaolb
+{
+  background-position:0px -45px;
+  bottom:-500px;
+  left:-90px;
+  float:left;
+}
+
+.jiaorb
+{
+  background-position:-45px -45px;
+  bottom:-500px;
+  right:-90px;
+  float:right;
+} */
+
+
+/* 醍醐课程页面布局测试 */
+/* #right
+{
+    margin-left:5px;
+	float:left;
+	width:954px;
+	height:604px;
+ 	background:url(img/rightback.png) no-repeat;
+	font-size:15px;
+	font-weight:bold;
+	font-family:宋体;
+    overflow:auto;
+}
+
+#left
+{
+    background:url(img/leftback.png) no-repeat;
+	float:left;
+	width:304px;
+	height:604px;
+	font-size:15px;
+	font-weight:bold;
+	font-family:宋体;
+
+}
+
+.newtopicdiv
+{
+  margin-left:5px;
+  margin-top:5px;
+}
+
+#newtopicbtn,#alltopicbtn
+{
+  width:140px;
+}
+
+#searchform
+{
+  margin-left:5px;
+}
+
+#searchform #searchtext
+{
+  width:225px;
+}
+
+#topics
+{
+  	overflow:scroll;
+	margin-left:1px;
+	margin-top:5px;
+	width:302px;
+	height:524px;
+}
+
+.eachtopic
+{
+  display:block;
+  height:40px;
+  border:1px solid #00ff00;
+}
+
+.uncurrenttopic .readtag,
+.uncurrenttopic .content,
+.uncurrenttopic .extrainfo,
+.uncurrenttopic .yread,
+.uncurrenttopic .nread
+{
+  height:40px;
+  background-color:#eeeeee;
+}
+
+.currenttopic .readtag,
+.currenttopic .content,
+.currenttopic .extrainfo,
+.currenttopic .yread,
+.currenttopic .nread
+{
+  height:40px;
+  background-color:#ffffff;
+}
+
+.readtag
+{
+  float:left;
+  width:15px;
+}
+
+.yread
+{
+  width:15px;
+}
+
+.nread
+{
+  width:15px;
+}
+
+.content
+{
+  float:left;
+  width:211px;
+}
+
+.content h1
+{
+  margin-top:10px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:0px;
+  color:#444444;
+  font-size:15px;
+  text-align:left;
+}
+
+.content .msgdiv
+{
+  padding-left:70px;
+  padding-bottom:3px;
+  width:100px;
+  font-size:13px;
+  color:#ff0000;
+}
+
+.extrainfo
+{
+  float:left;
+  width:55px;
+}
+
+.extrainfo .timestamp
+{
+  font-size:12px;
+  color:#333333;
+  height:15px;
+}
+
+.isfollow,.isteacherin,.topictype
+{
+  float:right;
+  width:15px;
+  height:17px;
+  margin:3px 1px;
+}
+
+.isfollow
+{
+  background:#ff0000 no-repeat;
+}
+
+.isteacherin
+{
+  background:#00ff00 no-repeat;
+}
+
+.topictype
+{
+  background:#0000ff no-repeat;
+}
+
+.middle
+{
+  margin:0px auto;
+  width:1267px;
+}
+
+
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color:#C7EBFF;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+.center h1 {
+    margin-bottom: 10px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #eaeaea;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+} */
+
+
+
+
+/* 文本换行测试 */
+/* div.tdiv th{
+  width:100px;
+}
+
+table,th,td{
+  border:1px solid #333333;
+}
+
+div.tdiv{
+  width:500px;
+  min-height:50px;
+  border:1px solid #ff0000;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+
+div.tdiv p{
+  padding:5px;
+}
+
+span.t{
+  font-size:50px;
+  font-weight:bold;
+  text-decoration:line-through;
+}
+ */
+
+
+/* 表单各种测试 */
+/* .radiob{
+}
+.check{
+}
+.line{
+  border:none;
+  background-image:url(img/btn1.png);
+  width:400px;
+  height:40px;
+  text-indent:100px;
+  line-height:10px;
+}
+.area{
+  border-color:#00ff00;
+  border-style:ridge;
+  border-right-width:3px;
+  border-bottom-width:3px;
+  background-color:#cccccc;
+  width:400px;
+  height:70px;
+  resize:none;
+}
+.btn{
+  background:#fdba5a url(img/btn2.png) no-repeat 0px -2px;
+  text-indent:25px;
+  height:30px;
+  width:120px;
+  line-height:30px;
+  border:1px solid #333333;
+}
+select option{
+  background-color:#dddddd;
+}
+
+select option.l1{
+  background-color:#00ccff;
+}
+
+select option.l2{
+  background-color:#435269;
+  color:#ffffff;
+}
+
+form{
+  padding-left:400px;
+}
+
+th{
+  text-align:right;
+}
+td{
+  padding:10px;
+}
+form input.btn{
+  margin-left:450px;
+} */
+
+
+
+
+/* 复杂列表排版测试 */
+/* .comul{
+  list-style-type:none;
+  border:1px solid #333333;
+  margin-left:50px;
+  width:400px;
+}
+
+.comul h1,.comul h2,.comul h3{
+  display:inline;
+  font-size:16px;
+}
+
+.comul li img{
+  float:left;
+  margin-top:5px;
+}
+
+.comul h1{
+  padding-left:30px;
+}
+
+.comul li h1 a{
+  float:left;
+  display:block;
+  text-decoration:none;
+  margin:5px;
+  width:250px;
+  padding-left:15px;
+  color:#ed48b9;
+}
+
+.comul h3{
+  border-left:3px solid #00ff00;
+  padding-left:5px;
+}
+
+.comul li{
+  padding:5px;
+}
+
+.comul li.t2{
+  background:url(img/t2.png) no-repeat 0px 10px;
+  background-color:#555555;
+}
+.comul li.t3{
+  background:url(img/t3.png) no-repeat 0px 10px;
+  background-color:#999999;
+}
+.comul li.t4{
+  background:url(img/t4.png) no-repeat 0px 10px;
+  background-color:#dddddd;
+}
+
+.comul li.t1{
+  height: 60px;
+  background:url(img/t1.png) repeat-y 0px 10px;
+  background-color:#0dede5;
+}
+
+.comul li.t1 div{
+  margin-left:20px;
+}
+
+.comul li.t1 h1{
+  padding-left:100px;
+  display:block;
+  color:#af2bec;
+}
+.comul li.t1 h2{
+  padding-left:20px;
+  font-size:14px;
+  color:#ed738d;
+}
+.comul li.t1 h3{
+  margin-top:0px;
+  margin-left:119px;
+} */
+
+
+
+
+/* 列表测试，自定义项目符号、首行缩进等 */
+/* .lzxul{
+  list-style-type:none;
+  border:1px solid #ff0000;
+  margin-left:50px;
+  width:300px;
+}
+
+.lzxul li{
+  background: url(img/arrow2.png) no-repeat;
+  padding-left:20px;
+  font-size:30px;
+  text-indent:20px;
+} */
+
+
+/* 导航测试，定义背景、链接block化等 */
+/* #navbar li{
+  float:left;
+}
+
+#navbar li a{
+  color:#ffffff;
+  text-decoration:none;
+  padding-top:7px;
+  text-align:center;
+  width:97px;
+  height:19px;
+  background:url(img/nav.png);
+  margin-left:2px;
+  display:block;
+}
+
+#navbar li a#current{
+  color:#ffffff;
+  background:url(img/nav.png) 0 -52px;
+}
+
+#navbar li a:hover{
+  color:#ffffff;
+  background:url(img/nav.png) 0 -26px;
+}
+
+#navbar{
+  list-style-type: none;
+  float:right;
+  height:26px;
+  border-bottom:2px solid #2788da;
+}
+
+#navdiv{
+  margin:5px auto;
+  width:1000px;
+} */
+
+
+/* 侧边栏导航测试 */
+/* #sidenav{
+  width:100px;
+  border-color:#c5c6c4;
+  border-style:solid;
+  border-width:0px 1px 1px 1px;
+}
+
+#sidenav h1,#sidenav h2{
+  margin:0px;
+  padding:4px;
+  font-size:12px;
+}
+
+#sidenav h1{
+  border-top:1px solid #c5c6c4;
+  background-color:#f4f4f4;
+}
+
+#sidenav h2{
+  font-weight:normal;
+} */
+
+
+/* 清空浮动的div */
+.clear{
+  clear:both;
+}

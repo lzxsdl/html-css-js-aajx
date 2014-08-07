@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script src="jquery-1.11.1.js"></script>
+	<style type="text/css">
+		div {background:#999999; position:relative;}
+		#div1 {width:100px; height:200px; float:left;}
+		#div2 {clear:left;margin-top:5px;float:left; width:100px; height:200px;}
+		#div3 {zoom:1px; margin-left:105px; _margin-left:102px; width:100px; height:405px;}
+	</style>
+</head>
+
+<body>
+	<div  id='div1'></div>
+	<div  id='div2'></div>
+	<div  id='div3'></div>
+</body>
+
+<script type="text/javascript">
+	function zoom(obj,x,y){
+		var num = obj.childNodes.length;
+		var newdiv;
+		if(num == 0){
+			newdiv = document.createElement("div");
+			newdiv.setAttribute("class", "tempdiv");
+			obj.appendChild(newdiv);
+		}
+		else
+		{
+			newdiv = obj.childNodes[0];
+		}
+		newdiv.style.display = "block";
+
+		var dW=obj.clientWidth; // 获取元素宽度  
+		var dH=obj.clientHeight; // 获取元素高度  
+
+		newdiv.style.width=dW*x+"px"; // 横向缩放  
+		newdiv.style.height=dH*y+"px"; // 纵向缩放  
+		newdiv.style.background = "#00ccff";
+		newdiv.style.zIndex = 99; // 设置z轴优先  
+
+		return false;
+	} 
+	function clear(obj){
+		obj.childNodes[0].style.display = "none";
+	}
+	$(document).ready( function(){
+		$("#div1").mouseover( function(){
+			zoom(this, 1.25, 1.25);
+		});
+		$("#div2").mouseover( function(){
+			zoom(this, 1.25, 1.25);
+		});
+		$("#div3").mouseover( function(){
+			zoom(this, 1.25, 1.25);
+		});
+		$("#div1").mouseout( function(){
+			clear(this);
+		});
+		$("#div2").mouseout( function(){
+			clear(this);
+		});
+		$("#div3").mouseout( function(){
+			clear(this);
+		});
+	});
+
+</script>
+
+
+
+
+
+</html>
